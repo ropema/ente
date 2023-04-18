@@ -1,0 +1,20 @@
+let palabraDesconocida = "Plataforma";
+let arregloInicial = palabraDesconocida.split("");
+let arregloFinal = [];
+for (let i = 0; i < arregloInicial.length; i++) {
+  arregloFinal[i] = "";
+}
+palabraConocida=arregloFinal.join("");
+let n=0;
+while(palabraConocida!==palabraDesconocida){
+  letra=prompt("ingrese letra");
+  n=n+1;
+  for (let j = 0; j < arregloInicial.length; j++) {
+    if(arregloInicial[j]===letra){
+      arregloFinal[j]=arregloInicial[j];
+    }
+  }
+  palabraConocida=arregloFinal.join("");
+  console.log(palabraConocida);
+  console.log(n);
+}
